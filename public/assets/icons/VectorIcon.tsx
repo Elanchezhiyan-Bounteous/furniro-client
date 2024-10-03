@@ -1,7 +1,7 @@
 import { IconProps } from "@/src/types/IconTypes";
 import React from "react";
 
-type Props = {};
+
 
 const VectorIcon = ({className}:IconProps) => {
   return (

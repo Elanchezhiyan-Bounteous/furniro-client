@@ -1,7 +1,6 @@
 import { IconProps } from "@/src/types/IconTypes";
 import React from "react";
 
-type Props = {};
 
 const ViewListIcon = ({className}:IconProps) => {
   return (

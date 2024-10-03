@@ -1,6 +1,6 @@
 import React from "react";
 
-type Props = {};
+
 
 const RightArrowIcon = (props: Props) => {
   return (

@@ -6,9 +6,9 @@ import { Typography } from "@/src/components/common/Typography";
 import Navbar from "@/src/components/Navbar";
 import React from "react";
 
-type Props = {};
 
-const page = (props: Props) => {
+
+const page = () => {
   return (
     <div className="">
       <Navbar />

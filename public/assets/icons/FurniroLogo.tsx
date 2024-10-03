@@ -1,8 +1,7 @@
 import React from "react";
 
-type Props = {};
 
-const FurniroLogo = (props: Props) => {
+const FurniroLogo = () => {
   return (
     <svg
       width="50"
