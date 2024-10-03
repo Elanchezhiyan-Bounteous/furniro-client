@@ -1,8 +1,6 @@
 import React from "react";
 
-
-
-const RightArrowIcon = (props: Props) => {
+const RightArrowIcon = () => {
   return (
     <svg
       width="20"
