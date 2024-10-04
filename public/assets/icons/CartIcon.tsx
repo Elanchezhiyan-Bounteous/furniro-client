@@ -1,5 +1,6 @@
 
-interface CartIconProps {
+interface CartIconProps
+ {
   className?: string;
 }
 
