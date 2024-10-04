@@ -2,10 +2,6 @@
 
 import { ImageViewerProps } from "@/src/types/IconTypes";
 import { useState } from "react";
-import FilterSection from "../filtersection/FilterSection";
-import FacebookIcon from "@/public/assets/icons/FacebookIcon";
-import LinkedInIcon from "@/public/assets/icons/LinkedInIcon";
-import TwitterIcon from "@/public/assets/icons/TwitterIcon";
 
 const ImageViewer = ({ images }: ImageViewerProps) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
