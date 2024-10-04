@@ -2,7 +2,7 @@ import { cn } from "@/src/utils/cn";
 import { FC, ReactNode } from "react";
 
 interface ButtonProps {
-  variant?: "primary" | "secondary" | "outline" | "v1" | "v2" | "v3";
+  variant?: "primary" | "secondary" | "outline" | "v1" | "v2" | "v3" | "v4";
   size?: "small" | "medium" | "large";
   icon?: ReactNode;
   children?: ReactNode;
@@ -34,6 +34,8 @@ const Button: FC<ButtonProps> = ({
             variant === "v2",
           " bg-[#F9F1E7] text-black hover:bg-[#B88E2F] hover:text-white transition-all ":
             variant === "v3",
+            "bg-white border-b border-gray-800 uppercase text-sm font-medium rounded-none":
+            variant === "v4",
           "opacity-50 cursor-not-allowed": disabled,
         },
         {

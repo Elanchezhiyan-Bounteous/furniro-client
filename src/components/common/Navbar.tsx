@@ -1,11 +1,11 @@
 import React from "react";
-import FurniroLogo from "../../public/assets/icons/FurniroLogo";
-import CartIcon from "../../public/assets/icons/CartIcon";
-import HeartIcon from "../../public/assets/icons/HeartIcon";
-import ProfileAlertIcon from "../../public/assets/icons/ProfileAlertIcon";
-import SearchIcon from "../../public/assets/icons/SearchIcon";
+import FurniroLogo from "../../../public/assets/icons/FurniroLogo";
+import CartIcon from "../../../public/assets/icons/CartIcon";
+import HeartIcon from "../../../public/assets/icons/HeartIcon";
+import ProfileAlertIcon from "../../../public/assets/icons/ProfileAlertIcon";
+import SearchIcon from "../../../public/assets/icons/SearchIcon";
 import Link from "next/link";
-import { Typography } from "./common/Typography";
+import { Typography } from "./Typography";
 
 const Navbar = () => {
   return (
