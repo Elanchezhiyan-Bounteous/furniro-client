@@ -7,7 +7,7 @@ const ImageViewer = ({ images }: ImageViewerProps) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-    <div className="flex flex-col-reverse md:flex-row py-5 px-8 gap-4 justify-around w-full md:w-1/2">
+    <div className="flex flex-col-reverse md:flex-row py-5 px-4 gap-4 justify-around w-full md:w-1/2">
       <div className="flex flex-row md:flex-col gap-2 justify-between items-start ">
         {images.map((image, index) => {
           return (
@@ -20,7 +20,7 @@ const ImageViewer = ({ images }: ImageViewerProps) => {
                 <img
                   src={image}
                   alt={`Thumbnail ${index}`}
-                  className="w-20 h-20 object-contain
+                  className="w-24 h-20 object-contain
                rounded-lg transition-transform transform group-hover:scale-110 duration-300 bg-[#F9F1E7]"
                 />
               </div>

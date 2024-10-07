@@ -1,6 +1,6 @@
 export const productDetails = [
   {
-    id: 'id1',
+    id: "id1",
     name: "Working Chair",
     description: "chair",
     price: 2500000,
@@ -19,11 +19,9 @@ export const productDetails = [
     },
     sizes: ["S", "M", "L"],
     colors: [
-      {name:"yellow-400", value:"#a46ede"},
-      {name:"red-500", value:"#FF0000"},
-      {name:"black", value:"#FF0000"},
-
-
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -38,7 +36,7 @@ export const productDetails = [
     ],
   },
   {
-    id: 'id2',
+    id: "id2",
     name: "Meeting Chair",
     description: "Meeting Room Furniture",
     price: 2500000,
@@ -57,8 +55,9 @@ export const productDetails = [
     },
     sizes: ["M", "L"],
     colors: [
-      { name: "Blue", value: "#0000FF" },
-      { name: "Gray", value: "#808080" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -73,7 +72,7 @@ export const productDetails = [
     ],
   },
   {
-    id: 'id3',
+    id: "id3",
     name: "Sofa",
     description: "Luxury sofa",
     price: 7000000,
@@ -92,8 +91,9 @@ export const productDetails = [
     },
     sizes: ["L", "XL"],
     colors: [
-      { name: "Gold", value: "#ffd700" },
-      { name: "Black", value: "#000000" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -108,7 +108,7 @@ export const productDetails = [
     ],
   },
   {
-    id: 'id4',
+    id: "id4",
     name: "Bar Set",
     description: "Outdoor bar set",
     price: 500000,
@@ -127,8 +127,9 @@ export const productDetails = [
     },
     sizes: ["Standard"],
     colors: [
-      { name: "Brown", value: "#8B4513" },
-      { name: "Black", value: "#000000" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -143,7 +144,7 @@ export const productDetails = [
     ],
   },
   {
-    id: 'id5',
+    id: "id5",
     name: "Cafe Chair",
     description: "Stylish cafe chair",
     price: 2500000,
@@ -162,8 +163,9 @@ export const productDetails = [
     },
     sizes: ["S", "M", "L"],
     colors: [
-      { name: "Red", value: "#FF0000" },
-      { name: "White", value: "#FFFFFF" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -178,7 +180,7 @@ export const productDetails = [
     ],
   },
   {
-    id: 'id6',
+    id: "id6",
     name: "Lounge Chair",
     description: "Comfortable lounge chair",
     price: 2500000,
@@ -197,8 +199,9 @@ export const productDetails = [
     },
     sizes: ["M", "L"],
     colors: [
-      { name: "Blue", value: "#0000FF" },
-      { name: "Gray", value: "#808080" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -231,8 +234,9 @@ export const productDetails = [
     },
     sizes: ["L", "XL"],
     colors: [
-      { name: "Gold", value: "#ffd700" },
-      { name: "Black", value: "#000000" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -265,8 +269,9 @@ export const productDetails = [
     },
     sizes: ["Standard"],
     colors: [
-      { name: "Brown", value: "#8B4513" },
-      { name: "Black", value: "#000000" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -299,8 +304,9 @@ export const productDetails = [
     },
     sizes: ["S", "M", "L"],
     colors: [
-      { name: "Red", value: "#FF0000" },
-      { name: "White", value: "#FFFFFF" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
@@ -333,8 +339,9 @@ export const productDetails = [
     },
     sizes: ["M", "L"],
     colors: [
-      { name: "Blue", value: "#0000FF" },
-      { name: "Gray", value: "#808080" },
+      { name: "blue", value: "#816DFA" },
+      { name: "black", value: "#000000" },
+      { name: "yellow", value: "#B88E2F" },
     ],
     thumbNailImages: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },

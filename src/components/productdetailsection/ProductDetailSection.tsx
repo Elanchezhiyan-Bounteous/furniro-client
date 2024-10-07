@@ -37,7 +37,9 @@ const ProductDetailSection = () => {
           <span className="text-yellow-400">★</span>
           <div className="w-[2px] h-8 bg-[#9F9F9F]/70 mx-2 "></div>
 
-          <span className="ml-2 text-gray-600">{product?.reviews} Customer Review</span>
+          <span className="ml-2 text-gray-600">
+            {product?.reviews} Customer Review
+          </span>
         </div>
 
         <p className="text-gray-700 ">{product?.description}</p>
@@ -63,13 +65,15 @@ const ProductDetailSection = () => {
             {product?.colors.map((color, index) => (
               <div
                 key={index}
-                className={`bg-${color.name} w-6 h-6 rounded-full cursor-pointer `}
-              ></div>
+                className={`w-6 h-6 rounded-full`}
+                style={{backgroundColor: color.value}}
+              >
+              </div>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-row gap-6 md:gap-4">
+        <div className="flex flex-row gap-4 md:gap-4">
           <div className="flex flex-row items-center border border-[#9F9F9F] rounded-lg ">
             <button
               onClick={() => handleQuantityChange("decrement")}
@@ -91,7 +95,7 @@ const ProductDetailSection = () => {
             </button>
           </div>
 
-          <button className="px:2 py-3 md:px-6 md:py-2 border rounded-lg border-black hover:bg-gray-100 text-black ">
+          <button className="px-2 py-3 md:px-6 md:py-2 border rounded-lg border-black hover:bg-gray-100 ">
             Add To Cart
           </button>
           <button className="px-2 py-3 md:px-6 md:py-2 border rounded-lg border-black hover:bg-gray-100">
