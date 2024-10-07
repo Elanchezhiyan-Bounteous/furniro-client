@@ -42,6 +42,7 @@ const ProductsList = () => {
 
   const handlePageChange = (newPage: number) => {
     router.push(`/shop/?page=${newPage}&per_page=${per_page}`);
+
     setTimeout(() => {
       window.scrollTo({
         top: 400,
