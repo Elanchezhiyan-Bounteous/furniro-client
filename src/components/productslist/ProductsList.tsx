@@ -98,7 +98,7 @@ const ProductsList = () => {
             <div
               key={index}
               className="w-full relative  group transition-transform transform hover:scale-95 hover:shadow-lg"
-              onClick={() => router.push("/singleproduct")}
+              onClick={() => router.push(`/singleproduct/?id=${product.id}`)}
             >
               <Image
                 src={product.src}

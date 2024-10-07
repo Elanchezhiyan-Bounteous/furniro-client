@@ -8,7 +8,7 @@ import { useRouter} from "next/navigation";
 const BreadCrumbNavigation = () => {
   const router = useRouter();
   return (
-    <div className="h-24 bg-[#F9F1E7] flex flex-row justify-between px-28 items-center">
+    <div className=" bg-[#F9F1E7] flex flex-row h-24 justify-between md:px-28 items-center">
       <div className="flex flex-row gap-6 items-center">
         <Typography as="p" className="text-xl text-[#9F9F9F] font-[400] hover:cursor-pointer hover:underline" onClick={() => router.push("/home")}>
           Home

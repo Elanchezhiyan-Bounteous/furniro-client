@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
       <BreadCrumbNavigation />
-      <div className="flex flex-row items-start px-28 py-10 gap-8">
+      <div className="flex flex-col md:flex-row md:items-start md:px-28 md:py-10 md:gap-8">
         <ImageViewer images={images} />
         <ProductDetailSection />
       </div>

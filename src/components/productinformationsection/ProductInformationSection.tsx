@@ -48,7 +48,7 @@ const ProductInformationSection = () => {
   };
   return (
     <>
-      <div className="px-56 pt-20">
+      <div className="w-full px-8 py-5 md:px-56 md:pt-20">
         <div className="flex flex-row justify-center space-x-8">
           <button
             className={`text-xl pb-2 ${
@@ -84,7 +84,7 @@ const ProductInformationSection = () => {
 
         <div className="pt-10 pb-8">{renderContent()}</div>
       </div>
-      <div className="pt-5 pb-16 px-32 flex gap-8 justify-between">
+      <div className="px-4 md:pt-5 md:pb-16 md:px-32 flex  flex-col md:flex-row gap-8 justify-between">
         <img
           src="/assets/images/cloudsofa1.png"
           alt="Product Image 1"

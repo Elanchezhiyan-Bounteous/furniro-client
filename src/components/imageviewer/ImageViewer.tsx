@@ -7,7 +7,7 @@ const ImageViewer = ({ images }: ImageViewerProps) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-    <div className="flex flex-row gap-4 justify-around w-1/2">
+    <div className="flex flex-row py-5 px-8 gap-4 justify-around w-full md:w-1/2">
       <div className="flex flex-col gap-2 justify-between items-start ">
         {images.map((image, index) => {
           return (

@@ -13,11 +13,11 @@ const RelatedProductsSection = () => {
 
   const visibleProducts = showAll ? productDetails : productDetails.slice(0, 4);
   return (
-    <div className="px-32 py-10">
+    <div className="md:px-32 py-10">
       <h2 className="text-center text-3xl font-semibold pb-6">
         Related Products
       </h2>
-      <div className="grid grid-cols-4 gap-y-10 gap-x-10">
+      <div className="grid grid-cols-1 gap-y-10 px-8 py-5 md:grid-cols-3 lg:grid-cols-4 md:gap-y-10 md:gap-x-10 md:px-40 md:py-16 transition-opacity duration-300">
         {visibleProducts.map((product, index) => (
           <div
             key={index}
