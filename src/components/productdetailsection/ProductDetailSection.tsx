@@ -63,13 +63,13 @@ const ProductDetailSection = () => {
             {product?.colors.map((color, index) => (
               <div
                 key={index}
-                className={`w-6 h-6 rounded-full cursor-pointer bg-${color.name}`}
+                className={`bg-${color.name} w-6 h-6 rounded-full cursor-pointer `}
               ></div>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-6 md:gap-4">
           <div className="flex flex-row items-center border border-[#9F9F9F] rounded-lg ">
             <button
               onClick={() => handleQuantityChange("decrement")}
@@ -91,10 +91,10 @@ const ProductDetailSection = () => {
             </button>
           </div>
 
-          <button className="px-6 py-2 border rounded-lg border-black hover:bg-gray-100 text-black ">
+          <button className="px:2 py-3 md:px-6 md:py-2 border rounded-lg border-black hover:bg-gray-100 text-black ">
             Add To Cart
           </button>
-          <button className="px-6 py-2 border rounded-lg border-black hover:bg-gray-100">
+          <button className="px-2 py-3 md:px-6 md:py-2 border rounded-lg border-black hover:bg-gray-100">
             + Compare
           </button>
         </div>

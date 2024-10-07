@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-white text-black justify-between px-12 font-montserrat items-center flex flex-row py-6">
+    <header className="w-full bg-white text-black justify-between  font-montserrat items-center flex flex-row px-4 md:px-12 py-6">
       <div className="flex flex-row items-center gap-1">
         <FurniroLogo />
         <Typography as="h1" className="text-3xl font-bold">

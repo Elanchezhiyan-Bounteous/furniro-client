@@ -19,8 +19,8 @@ export const productDetails = [
     },
     sizes: ["S", "M", "L"],
     colors: [
-      {name:"purple-500", value:"#a46ede"},
-      {name:"yellow-500", value:"#FF0000"},
+      {name:"yellow-400", value:"#a46ede"},
+      {name:"red-500", value:"#FF0000"},
       {name:"black", value:"#FF0000"},
 
 
