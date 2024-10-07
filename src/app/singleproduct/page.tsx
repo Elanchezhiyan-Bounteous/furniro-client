@@ -4,13 +4,13 @@ import ProductDetailSection from "@/src/components/productdetailsection/ProductD
 import ProductInformationSection from "@/src/components/productinformationsection/ProductInformationSection";
 import RelatedProductsSection from "@/src/components/relatedproductsection/RelatedProductsSection";
 import { images } from "@/src/data/images";
-import React from "react";
+import React, { Suspense } from "react";
 
 const page = () => {
 
 
   return (
-    <>
+    <Suspense fallback={<div>Loading....</div>}>
       <BreadCrumbNavigation />
       <div className="flex flex-col md:flex-row md:items-start md:px-28 md:py-10 md:gap-8">
         <ImageViewer images={images} />
@@ -21,7 +21,7 @@ const page = () => {
       <RelatedProductsSection/>
 
       
-    </>
+    </Suspense>
   );
 };
 
