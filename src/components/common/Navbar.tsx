@@ -1,22 +1,32 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import FurniroLogo from "../../../public/assets/icons/FurniroLogo";
 import CartIcon from "../../../public/assets/icons/CartIcon";
 import HeartIcon from "../../../public/assets/icons/HeartIcon";
 import ProfileAlertIcon from "../../../public/assets/icons/ProfileAlertIcon";
 import SearchIcon from "../../../public/assets/icons/SearchIcon";
 import Link from "next/link";
+import { TbMenuDeep } from "react-icons/tb";
+import { IoMdClose } from "react-icons/io";
 import { Typography } from "./Typography";
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
-    <div className="w-full bg-white text-black justify-between px-12 font-montserrat items-center flex flex-row py-6">
+    <header className="w-full bg-white text-black justify-between px-12 font-montserrat items-center flex flex-row py-6">
       <div className="flex flex-row items-center gap-1">
         <FurniroLogo />
         <Typography as="h1" className="text-3xl font-bold">
           Furniro
         </Typography>
       </div>
-      <div className="flex flex-row gap-80">
+
+      <div className="hidden lg:flex flex-row gap-80 items-center">
         <div className="flex flex-row gap-20 items-center">
           <Link href="/home">
             <Typography as="p" className="text-base font-poppins font-medium">
@@ -46,7 +56,56 @@ const Navbar = () => {
           <CartIcon className="w-7 h-7" />
         </div>
       </div>
-    </div>
+
+      <button className="lg:hidden flex items-center" onClick={toggleDrawer}>
+        <TbMenuDeep className="w-8 h-8" />
+      </button>
+
+      <div
+        className={`fixed top-0 right-0 h-full bg-white w-[75%] z-50 transform ${
+          isDrawerOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out shadow-lg`}
+      >
+        <div className="flex justify-between items-center p-6">
+          <Typography as="span" className="text-3xl font-medium">
+            Furniro
+          </Typography>
+          <button onClick={toggleDrawer}>
+            <IoMdClose className="w-6 h-6" />
+          </button>
+        </div>
+
+        <ul className="flex flex-col gap-y-6 font-medium items-start text-[18px] p-6">
+          <li>
+            <Link href="/" onClick={toggleDrawer}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/shop" onClick={toggleDrawer}>
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" onClick={toggleDrawer}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" onClick={toggleDrawer}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-40"
+          onClick={toggleDrawer}
+        ></div>
+      )}
+    </header>
   );
 };
 

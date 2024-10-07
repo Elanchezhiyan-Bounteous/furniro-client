@@ -106,6 +106,7 @@ const ProductDetailSection = () => {
           <TwitterIcon />
         </div>
       </div>
+      
     </div>
   );
 };

@@ -5,7 +5,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: "Rp 3.500.000",
     src: "/assets/images/worktable.png",
-    discount: "-30%"
+    discount: "-30%",
   },
   {
     name: "Leviosa",
@@ -13,7 +13,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: null,
     src: "/assets/images/chair.png",
-    discount: null
+    discount: null,
   },
   {
     name: "Lolito",
@@ -21,7 +21,7 @@ export const productDetails = [
     price: "Rp 7.000.000",
     originalPrice: "Rp 14.000.000",
     src: "/assets/images/sofa.png",
-    discount: "-50%"
+    discount: "-50%",
   },
   {
     name: "Respira",
@@ -29,7 +29,7 @@ export const productDetails = [
     price: "Rp 500.000",
     originalPrice: null,
     src: "/assets/images/livingroom.png",
-    discount: "New"
+    discount: "New",
   },
   {
     name: "Syltherine",
@@ -37,7 +37,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: "Rp 3.500.000",
     src: "/assets/images/worktable.png",
-    discount: "-30%"
+    discount: "-30%",
   },
   {
     name: "Leviosa",
@@ -45,7 +45,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: null,
     src: "/assets/images/chair.png",
-    discount: null
+    discount: null,
   },
   {
     name: "Lolito",
@@ -53,7 +53,7 @@ export const productDetails = [
     price: "Rp 7.000.000",
     originalPrice: "Rp 14.000.000",
     src: "/assets/images/sofa.png",
-    discount: "-50%"
+    discount: "-50%",
   },
   {
     name: "Respira",
@@ -61,7 +61,7 @@ export const productDetails = [
     price: "Rp 500.000",
     originalPrice: null,
     src: "/assets/images/livingroom.png",
-    discount: "New"
+    discount: "New",
   },
   {
     name: "Syltherine",
@@ -69,7 +69,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: "Rp 3.500.000",
     src: "/assets/images/worktable.png",
-    discount: "-30%"
+    discount: "-30%",
   },
   {
     name: "Leviosa",
@@ -77,7 +77,7 @@ export const productDetails = [
     price: "Rp 2.500.000",
     originalPrice: null,
     src: "/assets/images/chair.png",
-    discount: null
+    discount: null,
   },
   {
     name: "Lolito",
@@ -85,7 +85,7 @@ export const productDetails = [
     price: "Rp 7.000.000",
     originalPrice: "Rp 14.000.000",
     src: "/assets/images/sofa.png",
-    discount: "-50%"
+    discount: "-50%",
   },
   {
     name: "Respira",
@@ -93,6 +93,189 @@ export const productDetails = [
     price: "Rp 500.000",
     originalPrice: null,
     src: "/assets/images/livingroom.png",
-    discount: "New"
-  }
+    discount: "New",
+  },
+  {
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: "Rp 3.500.000",
+    src: "/assets/images/worktable.png",
+    discount: "-30%",
+  },
+  {
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: null,
+    src: "/assets/images/chair.png",
+    discount: null,
+  },
+  {
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    originalPrice: "Rp 14.000.000",
+    src: "/assets/images/sofa.png",
+    discount: "-50%",
+  },
+  {
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    originalPrice: null,
+    src: "/assets/images/livingroom.png",
+    discount: "New",
+  },
+  {
+    name: "Syltherine2",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: "Rp 3.500.000",
+    src: "/assets/images/worktable.png",
+    discount: "-30%",
+  },
+  {
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: null,
+    src: "/assets/images/chair.png",
+    discount: null,
+  },
+  {
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    originalPrice: "Rp 14.000.000",
+    src: "/assets/images/sofa.png",
+    discount: "-50%",
+  },
+  {
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    originalPrice: null,
+    src: "/assets/images/livingroom.png",
+    discount: "New",
+  },
+  {
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: "Rp 3.500.000",
+    src: "/assets/images/worktable.png",
+    discount: "-30%",
+  },
+  {
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: null,
+    src: "/assets/images/chair.png",
+    discount: null,
+  },
+  {
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    originalPrice: "Rp 14.000.000",
+    src: "/assets/images/sofa.png",
+    discount: "-50%",
+  },
+  {
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    originalPrice: null,
+    src: "/assets/images/livingroom.png",
+    discount: "New",
+  },
+  {
+    name: "Syltherine2",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: "Rp 3.500.000",
+    src: "/assets/images/worktable.png",
+    discount: "-30%",
+  },
+  {
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: null,
+    src: "/assets/images/chair.png",
+    discount: null,
+  },
+  {
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    originalPrice: "Rp 14.000.000",
+    src: "/assets/images/sofa.png",
+    discount: "-50%",
+  },
+  {
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    originalPrice: null,
+    src: "/assets/images/livingroom.png",
+    discount: "New",
+  },
+  {
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: "Rp 3.500.000",
+    src: "/assets/images/worktable.png",
+    discount: "-30%",
+  },
+  {
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    originalPrice: null,
+    src: "/assets/images/chair.png",
+    discount: null,
+  },
+  {
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    originalPrice: "Rp 14.000.000",
+    src: "/assets/images/sofa.png",
+    discount: "-50%",
+  },
+  {
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    originalPrice: null,
+    src: "/assets/images/livingroom.png",
+    discount: "New",
+  },
+];
+
+export const reviews = [
+  {
+    name: "John Doe",
+    review: "This speaker is amazing! The sound quality is unmatched.",
+  },
+  {
+    name: "Jane Smith",
+    review: "Great product! I love how portable and stylish it is.",
+  },
+  {
+    name: "Robert Brown",
+    review: "The Kilburn speaker exceeded my expectations. Highly recommend!",
+  },
+  {
+    name: "Emily White",
+    review: "The sound is crisp and clear, and the design is beautiful.",
+  },
+  {
+    name: "Michael Green",
+    review: "Absolutely worth the money. Best speaker I’ve owned!",
+  },
 ];

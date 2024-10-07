@@ -8,7 +8,7 @@ import CustomerSupportIcon from "@/public/assets/icons/CustomerSupportIcon";
 
 const FeatureSection = () => {
   return (
-    <div className="w-full h-60 bg-[#FAF3EA] flex flex-row gap-10 items-center justify-around">
+    <div className="md:h-60 bg-[#FAF3EA] w-full flex flex-col gap-10 items-start px-10 py-5 md:flex-row md:gap-10 md:items-center md:justify-around">
       <div className="flex flex-row gap-4 items-center">
         <TrophyIcon />
         <div className="flex flex-col gap-1 justify-center">

@@ -2,11 +2,11 @@ import { cn } from "@/src/utils/cn";
 import { FC, ReactNode } from "react";
 
 interface ButtonProps {
-  variant?: "primary" | "secondary" | "outline" | "v1" | "v2" | "v3" | "v4";
+  variant?: "primary" | "secondary" | "outline" | "v1" | "v2" | "v3" | "v4" | "v5";
   size?: "small" | "medium" | "large";
   icon?: ReactNode;
   children?: ReactNode;
-  value: string;
+  value: string | number;
   onClick?: () => void;
   className?: string;
   disabled?: boolean;
@@ -30,12 +30,14 @@ const Button: FC<ButtonProps> = ({
         {
           "bg-blue-600 text-white hover:bg-blue-700": variant === "primary",
           "bg-white text-black/30 rounded-sm h-10 w-10": variant === "v1",
-          "bg-white text-yellow-600 rounded-none font-semibold text-3xl":
+          "bg-white text-yellow-600 borderrounded-none font-semibold text-3xl":
             variant === "v2",
           " bg-[#F9F1E7] text-black hover:bg-[#B88E2F] hover:text-white transition-all ":
             variant === "v3",
             "bg-white border-b border-gray-800 uppercase text-sm font-medium rounded-none":
             variant === "v4",
+            "bg-white text-yellow-600 border border-yellow-600 rounded-none font-semibold text-3xl":
+            variant === "v5",
           "opacity-50 cursor-not-allowed": disabled,
         },
         {
