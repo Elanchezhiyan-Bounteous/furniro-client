@@ -1,6 +1,6 @@
 import FeatureSection from "@/src/components/featuresection/FeatureSection";
 import HeroSection from "@/src/components/herosection/HeroSection";
-import ProductsList from "@/src/components/productslist/ProductsList";
+import ProductsListControl from "@/src/components/productslistcontrol/ProductsListControl";
 import React, { Suspense } from "react";
 
 const page = () => {
@@ -8,7 +8,7 @@ const page = () => {
     <Suspense fallback={<div>Loading....</div>}>
       <div className="">
         <HeroSection />
-        <ProductsList />
+        <ProductsListControl />
         <FeatureSection />
       </div>
     </Suspense>

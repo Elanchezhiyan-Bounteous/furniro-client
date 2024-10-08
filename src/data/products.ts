@@ -23,7 +23,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -59,7 +59,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -95,7 +95,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -131,7 +131,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -167,7 +167,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -203,7 +203,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -238,7 +238,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -273,7 +273,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -308,7 +308,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -343,7 +343,7 @@ export const productDetails = [
       { name: "black", value: "#000000" },
       { name: "yellow", value: "#B88E2F" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -377,7 +377,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -411,7 +411,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -445,7 +445,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -479,7 +479,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -513,7 +513,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -547,7 +547,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -560,7 +560,7 @@ export const productDetails = [
     ],
   },
   {
-    name: "Cafe Chair",
+    name: "17th Chair",
     description: "Stylish cafe chair",
     price: 2500000,
     originalPrice: 3500000,
@@ -581,7 +581,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -615,7 +615,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -649,7 +649,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -683,7 +683,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -717,7 +717,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -751,7 +751,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -785,7 +785,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -819,7 +819,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -853,7 +853,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -887,7 +887,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -921,7 +921,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -955,7 +955,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -989,7 +989,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1023,7 +1023,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1057,7 +1057,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1091,7 +1091,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1125,7 +1125,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1159,7 +1159,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1193,7 +1193,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1227,7 +1227,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1261,7 +1261,7 @@ export const productDetails = [
       { name: "Red", value: "#FF0000" },
       { name: "White", value: "#FFFFFF" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1295,7 +1295,7 @@ export const productDetails = [
       { name: "Blue", value: "#0000FF" },
       { name: "Gray", value: "#808080" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1329,7 +1329,7 @@ export const productDetails = [
       { name: "Gold", value: "#ffd700" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },
@@ -1363,7 +1363,7 @@ export const productDetails = [
       { name: "Brown", value: "#8B4513" },
       { name: "Black", value: "#000000" },
     ],
-    thumbNailImages: [
+    productGallery: [
       { alt: "Sofa1", image: "/assets/images/Sofa1.png" },
       { alt: "Sofa2", image: "/assets/images/Sofa2.png" },
       { alt: "Sofa3", image: "/assets/images/Sofa3.png" },

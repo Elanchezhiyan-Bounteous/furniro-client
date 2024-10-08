@@ -39,7 +39,10 @@ export interface Product {
   shareLinks: ShareLinks;
   sizes: string[];
   colors: Color[];
-  thumbNailImages: Image[];
+  productGallery: Image[];
   descriptionImages: Image[];
 };
 
+export interface ProductListSectionProps {
+  products: Product[];
+}

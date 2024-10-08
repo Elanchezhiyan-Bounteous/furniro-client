@@ -1,5 +1,6 @@
 "use client";
 
+import { Product, ProductListSectionProps } from "@/src/types/IconTypes";
 import { FC } from "react";
 
 interface PaginationControlsProps {
@@ -24,7 +25,8 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   };
 
   return (
-    <div className="flex flex-row justify-center gap-6 pb-10">
+    <>
+     <div className="flex flex-row justify-center gap-6 pb-10">
       <button
         className={`px-4 py-2 rounded ${
           hasPrevPage
@@ -67,6 +69,8 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         Next
       </button>
     </div>
+    </>
+   
   );
 };
 
