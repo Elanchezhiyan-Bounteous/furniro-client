@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Product, ProductForApi } from "../types/IconTypes";
+import { ProductForApi } from "../types/IconTypes";
 
 const getAllProducts = async (): Promise<ProductForApi[]> => {
   const response = await fetch("http://localhost:5113/api/product/");
@@ -28,7 +28,6 @@ const getProductByCategory = async (category: string): Promise<ProductForApi[]> 
 
 
 const useGetAllProducts = () => {
-  // console.log("called")
   return useQuery({
     queryKey: ["product"],
     queryFn: () => getAllProducts(),

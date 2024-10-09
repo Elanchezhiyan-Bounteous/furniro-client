@@ -5,7 +5,6 @@ import React, { useState } from "react";
 
 const ProductInformationSection = ({
   productDetails,
-  isLoading,
 }: SingleProductComponentsProp) => {
   const [activeTab, setActiveTab] = useState("description");
 

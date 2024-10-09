@@ -5,7 +5,6 @@ import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import React, { Suspense } from "react";
 import ReactQueryProvider from "../components/reactqueryprovider/ReactQueryProvider";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

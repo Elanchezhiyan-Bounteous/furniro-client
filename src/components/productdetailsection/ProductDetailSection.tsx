@@ -1,16 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useGetProductsById } from "@/src/hooks/useProduct";
-import { ProductForApi, SingleProductComponentsProp } from "@/src/types/IconTypes";
-import { useSearchParams } from "next/navigation";
+import React, { useState } from "react";
+import { SingleProductComponentsProp } from "@/src/types/IconTypes";
 import FacebookIcon from "@/public/assets/icons/FacebookIcon";
 import LinkedInIcon from "@/public/assets/icons/LinkedInIcon";
 import TwitterIcon from "@/public/assets/icons/TwitterIcon";
 
-const ProductDetailSection = ({productDetails,isLoading}: SingleProductComponentsProp) => {
+const ProductDetailSection = ({
+  productDetails,
+  isLoading,
+}: SingleProductComponentsProp) => {
   const [quantity, setQuantity] = useState(1);
-
 
   const handleQuantityChange = (type: string) => {
     if (type === "increment") {

@@ -8,7 +8,7 @@ import Button from "../common/Button";
 import ShareIcon from "@/public/assets/icons/ShareIcon";
 import CompareIcon from "@/public/assets/icons/CompareIcon";
 import LikeIcon from "@/public/assets/icons/LikeIcon";
-import { Product, ProductForApi } from "@/src/types/IconTypes";
+import { ProductForApi } from "@/src/types/IconTypes";
 
 interface ProductListSectionProps {
   products: ProductForApi[];
@@ -33,12 +33,10 @@ const ProductsListSection = ({
               className="w-full relative group transition-transform transform hover:scale-95 hover:shadow-lg"
               onClick={() => router.push(`/singleproduct/?id=${product.id}`)}
             >
-              <Image
+              <img
                 src={product.src}
                 alt={product.name}
-                width={285}
-                height={301}
-                className="w-full"
+                className="w-full h-[301px]"
               />
               <div className="p-2 pb-4 flex flex-col gap-2 bg-[#F4F5F7] w-full">
                 <Typography
@@ -158,7 +156,7 @@ const ProductsListSection = ({
                     Compare
                   </button>
                   <button className="hover:text-gray-400 font-poppins flex flex-row gap-1 items-center">
-                    <LikeIcon className="fill-black"/>
+                    <LikeIcon className="fill-black" />
                     Like
                   </button>
                 </div>

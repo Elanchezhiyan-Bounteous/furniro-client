@@ -8,7 +8,7 @@ import RelatedProductsSection from "@/src/components/relatedproductsection/Relat
 import { useGetProductsById } from "@/src/hooks/useProduct";
 import { ProductForApi } from "@/src/types/IconTypes";
 import { useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const page = () => {
  
