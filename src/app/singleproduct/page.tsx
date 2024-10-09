@@ -10,7 +10,7 @@ import { ProductForApi } from "@/src/types/IconTypes";
 import { useSearchParams } from "next/navigation";
 import React from "react";
 
-const SingleProductPage = () => {
+const SingleProduct = () => {
  
   const searchParams = useSearchParams();
   const productId = searchParams.get("id") ?? "21";
@@ -30,4 +30,4 @@ const SingleProductPage = () => {
   );
 };
 
-export default SingleProductPage;
+export default SingleProduct;

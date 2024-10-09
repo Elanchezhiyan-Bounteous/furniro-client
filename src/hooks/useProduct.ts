@@ -26,7 +26,6 @@ const getProductByCategory = async (category: string): Promise<ProductForApi[]> 
 };
 
 
-
 const useGetAllProducts = () => {
   return useQuery({
     queryKey: ["product"],

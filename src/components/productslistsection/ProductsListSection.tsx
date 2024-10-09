@@ -36,9 +36,9 @@ const ProductsListSection = ({
               <img
                 src={product.src}
                 alt={product.name}
-                className="w-full h-[301px]"
+                className="w-full md:h-[250px] lg:h-[301px]"
               />
-              <div className="p-2 pb-4 flex flex-col gap-2 bg-[#F4F5F7] w-full">
+              <div className="p-2 pb-4 flex flex-col gap-2 bg-[#F4F5F7] w-full h-32 md:h-40 lg:h-32">
                 <Typography
                   as="h2"
                   className="font-semibold text-xl font-poppins"
