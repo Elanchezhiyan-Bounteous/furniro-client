@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-white text-black justify-between  font-montserrat items-center flex flex-row px-4 md:px-12 py-6">
+    <header className="w-full bg-white text-black justify-between font-montserrat items-center flex flex-row px-4 md:px-14 py-6">
       <div className="flex flex-row items-center gap-1">
         <FurniroLogo />
         <Typography as="h1" className="text-3xl font-bold">
@@ -26,35 +26,33 @@ const Navbar = () => {
         </Typography>
       </div>
 
-      <div className="hidden lg:flex flex-row gap-80 items-center">
-        <div className="flex flex-row gap-20 items-center">
-          <Link href="/home">
-            <Typography as="p" className="text-base font-poppins font-medium">
-              Home
-            </Typography>
-          </Link>
-          <Link href="/shop">
-            <Typography as="p" className="text-base font-poppins font-medium">
-              Shop
-            </Typography>
-          </Link>
-          <Link href="/about">
-            <Typography as="p" className="text-base font-poppins font-medium">
-              About
-            </Typography>
-          </Link>
-          <Link href="/contact">
-            <Typography as="p" className="text-base font-poppins font-medium">
-              Contact
-            </Typography>
-          </Link>
-        </div>
-        <div className="flex flex-row gap-12 items-center">
-          <ProfileAlertIcon className="w-7 h-7" />
-          <SearchIcon className="w-7 h-7" />
-          <HeartIcon className="w-7 h-7" />
-          <CartIcon className="w-7 h-7" />
-        </div>
+      <div className="hidden lg:flex flex-row md:gap-20 items-center">
+        <Link href="/home">
+          <Typography as="p" className="text-base font-poppins font-medium">
+            Home
+          </Typography>
+        </Link>
+        <Link href="/shop">
+          <Typography as="p" className="text-base font-poppins font-medium">
+            Shop
+          </Typography>
+        </Link>
+        <Link href="/about">
+          <Typography as="p" className="text-base font-poppins font-medium">
+            About
+          </Typography>
+        </Link>
+        <Link href="/contact">
+          <Typography as="p" className="text-base font-poppins font-medium">
+            Contact
+          </Typography>
+        </Link>
+      </div>
+      <div className="hidden lg:flex flex-row gap-12 items-center">
+        <ProfileAlertIcon className="w-7 h-7" />
+        <SearchIcon className="w-7 h-7" />
+        <HeartIcon className="w-7 h-7" />
+        <CartIcon className="w-7 h-7" />
       </div>
 
       <button className="lg:hidden flex items-center" onClick={toggleDrawer}>
@@ -64,7 +62,7 @@ const Navbar = () => {
       <div
         className={`fixed top-0 right-0 h-full bg-white w-[75%] z-50 transform ${
           isDrawerOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out shadow-lg`}
+        } transition-transform duration-300 ease-in-out shadow-md`}
       >
         <div className="flex justify-between items-center p-6">
           <Typography as="span" className="text-3xl font-medium">

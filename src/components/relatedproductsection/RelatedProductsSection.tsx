@@ -1,24 +1,34 @@
 "use client";
 
-import { productDetails } from "@/src/data/products";
 import Image from "next/image";
 import React, { useState } from "react";
 import Button from "../common/Button";
 import ShareIcon from "@/public/assets/icons/ShareIcon";
 import CompareIcon from "@/public/assets/icons/CompareIcon";
 import LikeIcon from "@/public/assets/icons/LikeIcon";
+import { ProductForApi, SingleProductComponentsProp } from "@/src/types/IconTypes";
+import { useGetProductsByCategory } from "@/src/hooks/useProduct";
 
-const RelatedProductsSection = () => {
+const RelatedProductsSection = ({productDetails,isLoading}:SingleProductComponentsProp) => {
+
   const [showAll, setShowAll] = useState(false);
 
-  const visibleProducts = showAll ? productDetails : productDetails.slice(0, 4);
+  const category = productDetails?.category;
+
+  const {data:relatedProducts, isLoading: relatedProductsLoading} = useGetProductsByCategory(category);
+
+  if(isLoading || !productDetails || relatedProductsLoading){
+    return <div>Loading</div>
+  }
+
+  const visibleProducts = showAll ? relatedProducts: (relatedProducts as ProductForApi[]).slice(0, 4);
   return (
-    <div className="md:px-32 py-10">
-      <h2 className="text-center text-3xl font-semibold pb-6">
+    <div className=" px-8 py-5 md:px-8 md:py-10 lg:px-40 lg:py-12">
+      <h2 className="text-center text-3xl font-semibold pb-6 md:pb-6 lg:pb-10">
         Related Products
       </h2>
-      <div className="grid grid-cols-1 gap-y-10 px-4 py-5 md:grid-cols-3 lg:grid-cols-4 md:gap-y-10 md:gap-x-10 transition-opacity duration-300">
-        {visibleProducts.map((product, index) => (
+      <div className="grid grid-cols-1 gap-y-10 md:grid-cols-3 lg:grid-cols-4 md:gap-y-10 md:gap-x-8 lg:gap-x-10  transition-opacity duration-300">
+        {(visibleProducts as ProductForApi[]).map((product, index) => (
           <div
             key={index}
             className="relative w-full group transition-transform transform hover:scale-95 hover:shadow-lg"
@@ -32,7 +42,7 @@ const RelatedProductsSection = () => {
             />
             <div className="p-4 bg-[#F4F5F7] w-full">
               <h2 className="font-semibold text-xl">{product.name}</h2>
-              <p className="text-gray-500">{product.description}</p>
+              <p className="text-gray-500">{product.desc}</p>
               <div className="mt-2">
                 <span className="text-xl font-bold text-primary">
                   {product.price}

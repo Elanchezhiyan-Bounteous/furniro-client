@@ -8,8 +8,8 @@ import CustomerSupportIcon from "@/public/assets/icons/CustomerSupportIcon";
 
 const FeatureSection = () => {
   return (
-    <div className="md:h-60 bg-[#FAF3EA] w-full flex flex-col gap-10 items-start px-10 py-5 md:flex-row md:gap-10 md:items-center md:justify-around">
-      <div className="flex flex-row gap-4 items-center">
+    <div className="lg:h-60 bg-[#FAF3EA] flex flex-col px-10 py-5 items-center gap-10  lg:flex-row  lg:gap-10 lg:items-center lg:justify-around">
+      <div className="w-96 flex flex-row gap-4 items-center">
         <TrophyIcon />
         <div className="flex flex-col gap-1 justify-center">
           <Typography as="p" className="font-poppins font-[600] text-xl">
@@ -23,7 +23,7 @@ const FeatureSection = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-row gap-4 items-center">
+      <div className="w-96 flex flex-row gap-4 items-center">
         <WarrantyIcon />
         <div className="flex flex-col gap-1 justify-center">
           <Typography as="p" className="font-poppins font-[600] text-xl">
@@ -37,7 +37,7 @@ const FeatureSection = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-row gap-4 items-center">
+      <div className="w-96 flex flex-row gap-4 items-center">
         <FreeShipping/>
         <div className="flex flex-col gap-1 justify-center">
           <Typography as="p" className="font-poppins font-[600] text-xl">
@@ -51,7 +51,7 @@ const FeatureSection = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-row gap-4 items-center">
+      <div className="w-96 flex flex-row gap-4 items-center">
         <CustomerSupportIcon/>
         <div className="flex flex-col gap-1 justify-center">
           <Typography as="p" className="font-poppins font-[600] text-xl">

@@ -1,6 +1,5 @@
 "use client";
 
-import { Product, ProductListSectionProps } from "@/src/types/IconTypes";
 import { FC } from "react";
 
 interface PaginationControlsProps {

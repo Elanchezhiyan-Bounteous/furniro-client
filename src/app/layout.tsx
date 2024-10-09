@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
+import React, { Suspense } from "react";
+import ReactQueryProvider from "../components/reactqueryprovider/ReactQueryProvider";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,11 +33,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-poppins`}
       >
-        <Navbar />
-        {children}
-        <Footer/>
+        <Suspense fallback={<div>Loading please wait</div>}>
+          <ReactQueryProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ReactQueryProvider>
+        </Suspense>
       </body>
-
     </html>
   );
 }

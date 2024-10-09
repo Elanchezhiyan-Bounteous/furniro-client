@@ -1,30 +1,39 @@
-
 export interface IconProps {
   className?: string;
 }
 
 export interface ImageViewerProps {
-  images : string[];
+  images: string[];
 }
 
-export interface Color  {
+export interface Color {
   name: string;
   value: string;
-};
+}
 
-export interface Image  {
+export interface Image {
   alt: string;
   image: string;
-};
+}
 
-export interface ShareLinks  {
+export interface ImageForApi {
+  alt: string;
+  imageUrl: string;
+}
+
+export interface Review {
+  name: string;
+  feedback: string;
+}
+
+export interface ShareLinks {
   facebook: string;
   linkedin: string;
   twitter: string;
-};
+}
 
 export interface Product {
-  id?:string;
+  id?: string;
   name: string;
   description: string;
   price: number;
@@ -41,8 +50,29 @@ export interface Product {
   colors: Color[];
   productGallery: Image[];
   descriptionImages: Image[];
-};
+}
 
-export interface ProductListSectionProps {
-  products: Product[];
+export interface ProductForApi {
+  id?: string;
+  name: string;
+  desc: string;
+  price: number;
+  originalPrice: number | null;
+  src: string;
+  discount: string | null;
+  reviews: Review[];
+  rating: number;
+  sku: string;
+  category: string;
+  tags: string[];
+  sizes: string[];
+  colors: Color[];
+  productGallery: ImageForApi[];
+  descriptionImages: ImageForApi[];
+}
+
+export interface SingleProductComponentsProp {
+  productDetails: ProductForApi;
+  isLoading?: boolean;
+  isSuccess?: boolean;
 }
