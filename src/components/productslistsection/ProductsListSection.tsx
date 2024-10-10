@@ -103,19 +103,17 @@ const ProductsListSection = ({
           ))}
         </div>
       ) : (
-        <div className="flex flex-col gap-8 px-8 py-5 md:px-40 md:py-16 transition-opacity duration-300">
+        <div className="flex flex-col gap-8 px-8 py-5 md:px-4 lg:px-40 lg:py-16 transition-opacity duration-300">
           {products.map((product, index) => (
             <div
               key={index}
-              className="w-full flex flex-col md:flex-row gap-6 items-center bg-[#F4F5F7] p-5 rounded-lg shadow-md"
+              className="w-full flex flex-col md:flex-row lg:justify-around lg:flex-row gap-6 lg:gap-6 items-center bg-[#F4F5F7] p-5 rounded-lg shadow-md"
               onClick={() => router.push(`/singleproduct/?id=${product.id}`)}
             >
-              <Image
+                <img
                 src={product.src}
                 alt={product.name}
-                width={200}
-                height={200}
-                className="w-full md:w-auto object-cover"
+                className="w-full h-[300px] md:h-[250px] md:w-[250px] lg:h-[200px] lg:w-[200px]"
               />
               <div className="flex flex-col gap-2 flex-1">
                 <Typography
@@ -144,9 +142,9 @@ const ProductsListSection = ({
                   )}
                 </div>
               </div>
-              <div className="flex flex-col gap-4 items-center">
-                <Button variant="v2" size="large" value="Add to cart" />
-                <div className="flex flex-row gap-6 text-gray-600">
+              <div className="flex flex-col gap-4 items-center ">
+                <Button variant="v2"  value="Add to cart" className="text-base" />
+                <div className="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-gray-600">
                   <button className="hover:text-gray-400 font-poppins flex flex-row gap-1 items-center">
                     <ShareIcon className="stroke-black" />
                     Share

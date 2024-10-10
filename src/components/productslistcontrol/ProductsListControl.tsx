@@ -126,10 +126,10 @@ const ProductsListControl = () => {
     return (
       <>
         <FilterSectionSkeleton />
-        <ProductsListPageSkeleton isGridView={isGridView}/>
+        <ProductsListPageSkeleton isGridView={isGridView} />
       </>
     );
-  } 
+  }
 
   return (
     <>
@@ -164,7 +164,7 @@ const ProductsListControl = () => {
           <div className="" onClick={() => toggleView("grid")}>
             <RoundGridIcon
               className={`h-7 w-7 object-contain ${
-                isGridView ? "bg-[#B88E2F]  rounded-lg p-0.5 h-9 w-9" : ""
+                isGridView ? "bg-[#B88E2F]  rounded-lg p-1 h-8 w-8" : ""
               }`}
             />
           </div>
