@@ -26,7 +26,7 @@ const Navbar = () => {
         </Typography>
       </div>
 
-      <div className="hidden lg:flex flex-row md:gap-20 items-center">
+      <div className="hidden lg:pl-24 lg:flex flex-row md:gap-20 items-center">
         <Link href="/home">
           <Typography as="p" className="text-base font-poppins font-medium">
             Home
