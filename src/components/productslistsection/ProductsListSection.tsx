@@ -8,6 +8,7 @@ import ShareIcon from "@/public/assets/icons/ShareIcon";
 import CompareIcon from "@/public/assets/icons/CompareIcon";
 import LikeIcon from "@/public/assets/icons/LikeIcon";
 import { ProductForApi } from "@/src/types/IconTypes";
+import Image from "next/image";
 
 interface ProductListSectionProps {
   products: ProductForApi[];
@@ -21,81 +22,52 @@ const ProductsListSection = ({
   const router = useRouter();
 
   return (
-    <div className="flex flex-col gap-5 md:gap-0">
+    <div className="">
       {gridView ? (
         <div
-          className={`grid grid-cols-1 gap-y-10 px-8 py-5 md:grid-cols-3 lg:grid-cols-4 md:gap-y-10 md:gap-x-8 lg:gap-x-10 md:px-10 lg:px-40  md:py-10 lg:py-16 transition-opacity duration-300`}
+          className={`grid grid-cols-1 w-full h-full gap-y-10 px-8 py-5 md:grid-cols-2 lg:grid-cols-3 md:gap-y-10 md:gap-x-8 lg:gap-x-5 md:px-10 lg:px-12  md:py-10 lg:py-16 transition-opacity duration-300`}
         >
           {products.map((product, index) => (
             <div
-              key={index}
-              className="w-full relative group transition-transform transform hover:scale-95 hover:shadow-lg"
+              className=""
               onClick={() => router.push(`/singleproduct/?id=${product.id}`)}
+              key={index}
             >
-              <img
-                src={product.src}
-                alt={product.name}
-                className="w-full md:h-[250px] lg:h-[301px]"
-              />
-              <div className="p-2 pb-4 flex flex-col gap-2 bg-[#F4F5F7] w-full h-32 md:h-40 lg:h-32">
+              <div className="w-full h-[517px]">
+                <Image
+                  height={517}
+                  width={517}
+                  src="/assets/nikeimages/nikeairforce1gallery1.png"
+                  alt="alt"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="pt-3 pb-3 flex flex-col gap-0.5 w-full h-32">
                 <Typography
                   as="h2"
-                  className="font-semibold text-xl font-poppins"
+                  className="font-[500] text-base font-poppins"
                 >
-                  {product.name}
+                  Nike Air Force 1 Low Retro Premium
                 </Typography>
                 <Typography as="p" className="text-gray-500 font-poppins">
-                  {product.desc}
+                  Men's shoes
                 </Typography>
-                <div className="flex flex-row items-center w-full ">
+                <div className="flex flex-row items-center w-full">
                   <Typography
                     as="span"
-                    className="text-xl font-bold text-primary font-poppins"
+                    className="text-base font-[500] text-primary font-poppins"
                   >
-                    {product.price}
+                    Rs 10000
                   </Typography>
                   {product.originalPrice && (
                     <Typography
                       as="span"
                       className="text-gray-400 line-through ml-2 font-poppins"
                     >
-                      {product.originalPrice}
+                      Rs 15000
                     </Typography>
                   )}
-                </div>
-                {product.discount && (
-                  <div
-                    className={`absolute top-5 right-5 rounded-full ${
-                      product.discount === "New"
-                        ? "bg-[#2EC1AC] py-3 px-2"
-                        : "bg-[#E97171] py-3 px-1"
-                    } text-white font-poppins font-medium`}
-                  >
-                    {product.discount}
-                  </div>
-                )}
-              </div>
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col gap-4 justify-center items-center transition-opacity duration-300">
-                <Button variant="v2" size="large" value="Add to cart" />
-                <div className="flex flex-row gap-6 text-white items-center">
-                  <div className="flex flex-row gap-1 items-center">
-                    <ShareIcon />
-                    <button className="hover:text-gray-400 font-poppins">
-                      Share
-                    </button>
-                  </div>
-                  <div className="flex flex-row gap-1 items-center">
-                    <CompareIcon />
-                    <button className="hover:text-gray-400 font-poppins">
-                      Compare
-                    </button>
-                  </div>
-                  <div className="flex flex-row gap-1 items-center">
-                    <LikeIcon />
-                    <button className="hover:text-gray-400 font-poppins">
-                      Like
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>

@@ -11,7 +11,6 @@ const getAllProducts = async (): Promise<ProductForApi[]> => {
 
 const getProductById = async (id: string): Promise<ProductForApi> => {
   const response = await fetch(`http://localhost:5113/api/product/${id}`);
-
   const productsData = response.json();
   console.log("data by id", productsData)
   return productsData;

@@ -52,7 +52,9 @@ const Navbar = () => {
         <ProfileAlertIcon className="w-7 h-7" />
         <SearchIcon className="w-7 h-7" />
         <HeartIcon className="w-7 h-7" />
-        <CartIcon className="w-7 h-7" />
+        <div>
+          <CartIcon className="w-7 h-7" />
+        </div>
       </div>
 
       <button className="lg:hidden flex items-center" onClick={toggleDrawer}>

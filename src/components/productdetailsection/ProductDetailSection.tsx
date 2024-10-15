@@ -5,12 +5,29 @@ import { SingleProductComponentsProp } from "@/src/types/IconTypes";
 import FacebookIcon from "@/public/assets/icons/FacebookIcon";
 import LinkedInIcon from "@/public/assets/icons/LinkedInIcon";
 import TwitterIcon from "@/public/assets/icons/TwitterIcon";
+import { useAppDispatch, useAppSelector } from "@/src/lib/hooks";
+import { addToCart, cartInfo, openCart } from "@/src/lib/features/cartSlice";
+import CartSection from "../cartsection/cartSection";
 
 const ProductDetailSection = ({
   productDetails,
   isLoading,
 }: SingleProductComponentsProp) => {
+  const dispatch = useAppDispatch();
+  const cart = useAppSelector(cartInfo);
+
   const [quantity, setQuantity] = useState(1);
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [isCartVisible, setIsCartVisible] = useState(false);
+
+  const handleSizeClick = (size: string) => {
+    setSelectedSize(size);
+  };
+
+  const handleColorClick = (color: string) => {
+    setSelectedColor(color);
+  };
 
   const handleQuantityChange = (type: string) => {
     if (type === "increment") {
@@ -19,6 +36,23 @@ const ProductDetailSection = ({
       setQuantity(quantity - 1);
     }
   };
+
+  const handleAddToCart = () => {
+    if (productDetails) {
+      const cartItem = {
+        id: productDetails.id,
+        name: productDetails.name,
+        price: productDetails.price,
+        quantity,
+        size: selectedSize,
+        color: selectedColor,
+      };
+      dispatch(addToCart(cartItem));
+      dispatch(openCart());
+    }
+  };
+
+  
 
   if (isLoading || !productDetails) {
     return (
@@ -115,7 +149,10 @@ const ProductDetailSection = ({
             {productDetails?.sizes.map((size, index) => (
               <button
                 key={index}
-                className="px-4 py-2 border rounded-md hover:bg-gray-100"
+                className={`px-4 py-2 border rounded-md hover:bg-gray-100 ${
+                  selectedSize === size ? "bg-gray-300" : ""
+                }`}
+                onClick={() => handleSizeClick(size)}
               >
                 {size}
               </button>
@@ -125,13 +162,15 @@ const ProductDetailSection = ({
 
         <div className="flex flex-col gap-4">
           <h4 className="font-semibold">Color</h4>
-
           <div className="flex flex-row gap-2 items-center">
             {productDetails?.colors.map((color, index) => (
               <div
                 key={index}
-                className={`w-6 h-6 rounded-full`}
+                className={`w-6 h-6 rounded-full cursor-pointer ${
+                  selectedColor === color.value ? "scale-125" : ""
+                }`}
                 style={{ backgroundColor: color.value }}
+                onClick={() => handleColorClick(color.value)}
               ></div>
             ))}
           </div>
@@ -159,7 +198,10 @@ const ProductDetailSection = ({
             </button>
           </div>
 
-          <button className="px-2 py-3 lg:px-6 lg:py-2 border rounded-lg border-black hover:bg-gray-100 ">
+          <button
+            onClick={handleAddToCart}
+            className="px-2 py-3 lg:px-6 lg:py-2 border rounded-lg border-black hover:bg-gray-100 "
+          >
             Add To Cart
           </button>
           <button className="px-2 py-3 lg:px-6 lg:py-2 border rounded-lg border-black hover:bg-gray-100">
@@ -182,6 +224,8 @@ const ProductDetailSection = ({
           <TwitterIcon />
         </div>
       </div>
+
+      {cart.isCartVisible && <CartSection />}
     </div>
   );
 };

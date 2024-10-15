@@ -1,6 +1,7 @@
 "use client";
 
 import { SingleProductComponentsProp } from "@/src/types/IconTypes";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const ProductInformationSection = ({
@@ -89,6 +90,7 @@ const ProductInformationSection = ({
       <div className="px-4 md:px-16 md:pt-2 lg:pt-5 lg:pb-16 lg:px-32 flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 md:justify-evenly">
         <div className=" md:w-1/2 sm:w-full ">
           <img
+            
             src={productDetails?.descriptionImages[0].imageUrl}
             alt="Product Image 1"
             className="w-full rounded-lg shadow-lg  bg-[#F9F1E7]"
@@ -96,13 +98,15 @@ const ProductInformationSection = ({
         </div>
         <div className="md:w-1/2 sm:w-full ">
           <img
+            height={10}
+            width={10}
             src={productDetails?.descriptionImages[1].imageUrl}
             alt="Product Image 2"
             className="w-full rounded-lg shadow-lg bg-[#F9F1E7]"
           />
         </div>
       </div>
-      <hr className="mt-6"/>
+      <hr className="mt-6" />
     </>
   );
 };
